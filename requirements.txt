@@ -1,0 +1,32 @@
+# Core Framework
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+
+# Database
+sqlalchemy
+psycopg2-binary
+alembic
+
+# AI & LLM (Note: Some may have limited Python 3.14 support)
+openai
+langchain
+langchain-openai
+langchain-community
+crewai
+
+# Document Processing
+python-multipart
+pypdf2
+python-docx
+pandas
+
+# Authentication & Security
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv
+
+# Utilities
+httpx
+python-dateutil
