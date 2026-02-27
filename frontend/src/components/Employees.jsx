@@ -201,15 +201,6 @@ export default function Employees() {
                 Joined: {new Date(employee.hire_date).toLocaleDateString()}
               </div>
             </div>
-
-            <div className="mt-4 pt-4 border-t">
-              <a
-                href={`/onboarding?employee=${employee.id}`}
-                className="text-sm text-primary-600 hover:text-primary-700 font-medium"
-              >
-                View Onboarding →
-              </a>
-            </div>
           </div>
         ))}
       </div>

@@ -113,6 +113,7 @@ class EmployeeResponse(BaseModel):
     email: str
     position: str
     department: str
+    is_active: bool = True
     hire_date: datetime
     
     class Config:

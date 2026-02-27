@@ -274,11 +274,10 @@ def get_application(application_id: int, db: Session = Depends(get_db)):
 @app.post("/employees/", response_model=EmployeeResponse, status_code=201)
 def create_employee(
     employee: EmployeeCreate,
-    background_tasks: BackgroundTasks,
     db: Session = Depends(get_db)
 ):
     """
-    Create a new employee and initialize onboarding
+    Create a new employee
     """
     # Check if employee already exists
     existing = db.query(Employee).filter(Employee.email == employee.email).first()
@@ -296,18 +295,6 @@ def create_employee(
     db.add(db_employee)
     db.commit()
     db.refresh(db_employee)
-    
-    # Schedule onboarding initialization in background
-    background_tasks.add_task(
-        initialize_onboarding,
-        db_employee.id,
-        {
-            "name": db_employee.name,
-            "position": db_employee.position,
-            "department": db_employee.department,
-            "hire_date": db_employee.hire_date.isoformat()
-        }
-    )
     
     return db_employee
 

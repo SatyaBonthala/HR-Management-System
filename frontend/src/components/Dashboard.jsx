@@ -87,7 +87,7 @@ export default function Dashboard() {
                 <p className="text-sm text-gray-600">AI analyzes resumes and matches candidates to positions</p>
               </div>
             </div>
-            <div className="flex items-start">
+            {/* <div className="flex items-start">
               <div className="flex-shrink-0 w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
                 <span className="text-primary-600 font-bold">2</span>
               </div>
@@ -104,7 +104,7 @@ export default function Dashboard() {
                 <p className="font-medium text-gray-900">24/7 Onboarding Assistant</p>
                 <p className="text-sm text-gray-600">AI chatbot answers employee questions instantly</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -125,7 +125,7 @@ export default function Dashboard() {
             </button>
             <button className="btn btn-primary text-left py-3">
               <div className="text-lg mb-1">👨‍💼 Add Employee</div>
-              <div className="text-xs opacity-90">Onboard new hire</div>
+              <div className="text-xs opacity-90">Add new employee</div>
             </button>
           </div>
         </div>

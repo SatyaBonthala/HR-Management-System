@@ -105,6 +105,7 @@ class Employee(Base):
     phone = Column(String(50))
     position = Column(String(255))
     department = Column(String(100))
+    is_active = Column(Boolean, default=True)
     
     hire_date = Column(DateTime, default=datetime.utcnow)
     created_at = Column(DateTime, default=datetime.utcnow)

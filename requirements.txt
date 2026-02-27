@@ -1,32 +1,32 @@
 # Core Framework
-fastapi
-uvicorn[standard]
-pydantic
-pydantic-settings
+fastapi==0.109.0
+uvicorn==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
 
 # Database
-sqlalchemy
-psycopg2-binary
-alembic
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+alembic==1.13.1
 
-# AI & LLM (Note: Some may have limited Python 3.14 support)
-openai
-langchain
-langchain-openai
-langchain-community
-crewai
+# AI & LLM
+groq==0.4.2
+langchain==0.1.0
+langchain-openai==0.0.2
+langchain-community==0.0.10
+crewai==0.1.18
 
 # Document Processing
-python-multipart
-pypdf2
-python-docx
-pandas
+python-multipart==0.0.6
+pypdf2==3.0.1
+python-docx==1.1.0
+pandas==2.1.4
 
 # Authentication & Security
-python-jose[cryptography]
-passlib[bcrypt]
-python-dotenv
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
 
 # Utilities
-httpx
-python-dateutil
+httpx==0.26.0
+python-dateutil==2.8.2

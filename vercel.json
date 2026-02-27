@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "main.py"
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "@database_url",
+    "GROQ_API_KEY": "@groq_api_key",
+    "APP_NAME": "Agentic HR Management System",
+    "DEBUG": "False",
+    "SECRET_KEY": "@secret_key",
+    "RECRUITMENT_AGENT_MODEL": "llama-3.3-70b-versatile",
+    "ONBOARDING_AGENT_MODEL": "llama-3.3-70b-versatile",
+    "AGENT_TEMPERATURE": "0.7",
+    "AGENT_MAX_TOKENS": "2000"
+  }
+}

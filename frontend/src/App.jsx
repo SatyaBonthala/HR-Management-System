@@ -4,7 +4,7 @@ import Candidates from './components/Candidates';
 import Positions from './components/Positions';
 import Applications from './components/Applications';
 import Employees from './components/Employees';
-import Onboarding from './components/Onboarding';
+// import Onboarding from './components/Onboarding';
 
 function Navigation() {
   const location = useLocation();
@@ -15,7 +15,7 @@ function Navigation() {
     { path: '/candidates', label: 'Candidates', icon: '👥' },
     { path: '/applications', label: 'Applications', icon: '📝' },
     { path: '/employees', label: 'Employees', icon: '👨‍💼' },
-    { path: '/onboarding', label: 'Onboarding', icon: '🚀' },
+    // { path: '/onboarding', label: 'Onboarding', icon: '🚀' },
   ];
 
   return (
@@ -61,7 +61,7 @@ function App() {
             <Route path="/positions" element={<Positions />} />
             <Route path="/applications" element={<Applications />} />
             <Route path="/employees" element={<Employees />} />
-            <Route path="/onboarding" element={<Onboarding />} />
+            {/* <Route path="/onboarding" element={<Onboarding />} /> */}
           </Routes>
         </main>
       </div>
